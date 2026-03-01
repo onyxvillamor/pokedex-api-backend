@@ -46,6 +46,6 @@ class FavoritesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def favorite_params
-      params.expect(favorite: [ :name ])
+      params.expect(favorite: [ :name, :note ])
     end
 end
